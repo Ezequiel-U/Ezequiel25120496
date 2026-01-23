@@ -27,3 +27,21 @@ pokemons.forEach(pokemon => {
             container.appendChild(card);
         });
 });
+function datoCurioso() {
+    const randomId = Math.floor(Math.random() * 151) + 1;
+
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${randomId}`)
+        .then(res => res.json())
+        .then(data => {
+            const texto = data.flavor_text_entries.find(
+                entry => entry.language.name === "es"
+            );
+
+            const nombre = data.name.toUpperCase();
+
+            document.getElementById("dato-pokemon").innerHTML = `
+                <strong>${nombre}</strong><br>
+                ${texto ? texto.flavor_text.replace(/\n|\f/g, " ") : "No se encontró un dato."}
+            `;
+        });
+}

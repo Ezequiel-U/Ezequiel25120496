@@ -1,0 +1,23 @@
+{
+  "name": "Pokémon y sus Tipos",
+  "short_name": "Pokémon",
+  "description": "Conoce los tipos de Pokémon y ejemplos representativos",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffcc00",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/pokebola.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/pokebola2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

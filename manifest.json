@@ -11,12 +11,12 @@
   "icons": [
     {
       "src": "icons/pokebola.png",
-      "sizes": "128x128",
+      "sizes": "512x512",
       "type": "image/png"
     },
     {
       "src": "icons/pokebola2.png",
-      "sizes": "96x96",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
